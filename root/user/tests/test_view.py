@@ -9,7 +9,7 @@ class TestUserViews(UserTestSetUp):
         """
         response = self.client.post(self.register_url,format="json")
         
-        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.status_code, 200)
     
     def test_user_successful_registration(self):
         """

@@ -23,4 +23,6 @@ jobs:
           python -m pip install --user -r requirements.txt
       
       - name : Test
-        run : python manage.py test
+        run : |
+          cd root
+          python manage.py test
